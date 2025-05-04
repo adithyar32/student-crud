@@ -1,0 +1,25 @@
+/* src/components/Projects.module.css */
+.projects {
+    background-color: #eef; /* Slightly different background */
+}
+
+.projectGrid {
+   display: grid;
+   /* Create responsive columns: try 1, then 2, then 3 */
+   grid-template-columns: 1fr; /* Default: 1 column */
+   gap: 2rem;
+}
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 600px) {
+   .projectGrid {
+       grid-template-columns: repeat(2, 1fr); /* 2 columns */
+   }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 900px) {
+   .projectGrid {
+       grid-template-columns: repeat(3, 1fr); /* 3 columns */
+   }
+}

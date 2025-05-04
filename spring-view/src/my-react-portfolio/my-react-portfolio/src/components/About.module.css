@@ -1,0 +1,32 @@
+/* src/components/About.module.css */
+.about {
+    padding: 20px; /* Example padding */
+    margin: 10px auto; /* Example margin */
+}
+
+.aboutContent {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left; /* Default text align */
+}
+
+.profilePic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevent image from shrinking too much */
+}
+
+@media (max-width: 768px) {
+    .aboutContent {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profilePic {
+        margin-bottom: 1.5rem;
+    }
+}

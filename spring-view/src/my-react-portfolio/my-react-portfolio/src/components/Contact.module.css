@@ -1,0 +1,40 @@
+/* src/components/Contact.module.css */
+.contact {
+    text-align: center;
+    background-color: #e9e9e9;
+}
+
+.contact p {
+    margin-bottom: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactInfo p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact a {
+    color: #337ab7; /* Standard link color */
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.socialLinks {
+    margin-top: 1.5rem;
+}
+
+.socialLinks a {
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline-block; /* Better spacing/alignment */
+}
+.socialLinks span {
+    color: #aaa;
+}

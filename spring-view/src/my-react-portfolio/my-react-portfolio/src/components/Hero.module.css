@@ -1,0 +1,58 @@
+/* src/components/Hero.module.css */
+.hero {
+    background: #555; /* Different background for hero */
+    color: #fff;
+    text-align: center;
+    padding: 6rem 20px !important; /* Use !important cautiously to override global section padding if needed */
+    min-height: 60vh; /* Give it some height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Optional: Add a background image */
+    /* background: url('/images/hero-background.jpg') no-repeat center center/cover; */
+    /* Note: If image is in public folder, path starts with / */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Optional CTA Button Style */
+/*
+.ctaButton {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #eee;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #ccc;
+}
+*/
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 480px) {
+     .hero h1 {
+        font-size: 2rem;
+    }
+     .hero p {
+        font-size: 1rem;
+     }
+}

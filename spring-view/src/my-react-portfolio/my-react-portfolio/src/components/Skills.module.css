@@ -1,0 +1,88 @@
+/* src/components/Skills.module.css */
+
+.skillsSection {
+    background-color: #ffffff; /* Or keep default white, or choose another */
+    /* Inherits padding/max-width from global 'section' styles */
+  }
+  
+  .skillsSection h2 {
+    font-size: 2rem; /* Adjust as needed */
+    color: #333; /* Darker color for better readability */
+    text-align: center; /* Center the heading */
+    /* Inherits styles from global 'section h2', override if needed */
+    /* margin-bottom: 2.5rem; */ /* Example override */
+  }
+  
+  .skillsContainer {
+    display: grid;
+    /* Responsive grid: Fit as many columns as possible with min width 280px */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem; /* Space between grid items (categories) */
+    max-width: 1100px; /* Ensure container doesn't get too wide */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .skillCategory {
+    background-color: #f9f9f9; /* Light background for each category block */
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skillCategory:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skillCategory h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eee; /* Subtle separator */
+    padding-bottom: 0.5rem;
+  }
+  
+  .skillCategory ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  .skillCategory li {
+    margin-bottom: 0.75rem; /* Space between skills */
+    line-height: 1.5;
+    font-size: 0.95rem;
+    color: #555;
+    position: relative; /* For potential pseudo-elements */
+    padding-left: 1.2em; /* Space for pseudo-element */
+  }
+  
+  /* Optional: Add a custom bullet point or icon */
+  .skillCategory li::before {
+    content: '▹'; 
+    position: absolute;
+    left: 0;
+    color: #337ab7; 
+    font-weight: bold;
+  }
+  
+  .skillCategory li strong {
+    color: #333; 
+  }
+  
+  /* Responsive adjustments for smaller screens if needed */
+  @media (max-width: 600px) {
+    .skillsContainer {
+      grid-template-columns: 1fr; /* Stack categories vertically */
+      gap: 1.5rem;
+    }
+  
+    .skillCategory h3 {
+      font-size: 1.2rem;
+    }
+  
+    .skillCategory li {
+      font-size: 0.9rem;
+    }
+  }
